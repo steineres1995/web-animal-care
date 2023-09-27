@@ -32,7 +32,7 @@ export const Login = () => {
       })
       .then((data) => {
         localStorage.setItem('token', data.accessToken);
-        navigate('test');
+        navigate('dashboard');
       })
       .catch((error) => {
         setError(error.message);
@@ -47,8 +47,7 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      Login
+    <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <Input
         label="Email"
         type="email"
