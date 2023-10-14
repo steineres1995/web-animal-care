@@ -7,7 +7,7 @@ export const CreateAnimal = () => {
   return (
     <Container>
       <Button text="Volver" onClick={() => navigate('/dashboard')} />
-      <form>
+      <form className="px-4">
         <Input
           label="Nro Carabana"
           type="text"

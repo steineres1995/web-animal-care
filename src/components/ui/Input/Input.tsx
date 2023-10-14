@@ -7,11 +7,8 @@ interface InputProps {
 }
 export const Input = ({ label, type, name, value, onChange }: InputProps) => {
   return (
-    <div>
-      <label
-        className="block mb-2 text-sm font-medium text-gray-900"
-        htmlFor={name}
-      >
+    <div className="pb-2.5">
+      <label className="block mb-2 font-bold text-gray-900" htmlFor={name}>
         {label}
       </label>
       <input

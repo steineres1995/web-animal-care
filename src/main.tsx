@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Container } from './components/ui/index.tsx';
 import App from './App.tsx';
 import './index.css';
 
@@ -11,7 +12,9 @@ if (container) {
   root.render(
     <React.StrictMode>
       <Router>
-        <App />
+        <Container>
+          <App />
+        </Container>
       </Router>
     </React.StrictMode>
   );
