@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { Button } from '../ui/index';
 
 //TODO: Implementar el logout
@@ -30,18 +30,26 @@ const SideMenu = () => {
         </li>
         <li>
           <Link
-            to="/crear-medicion"
+            to="/dashboard/meassure/create"
             className="block px-4 py-2 rounded hover:bg-primary"
           >
-            Crear Medición
+            Agregar Medición
           </Link>
         </li>
         <li>
           <Link
-            to="/ver-mediciones"
+            to="/dashboard/meassure"
             className="block px-4 py-2 rounded hover:bg-primary"
           >
             Ver Mediciones
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/dashboard/session"
+            className="block px-4 py-2 rounded hover:bg-primary"
+          >
+            Crear Sesion Medición
           </Link>
         </li>
       </ul>
